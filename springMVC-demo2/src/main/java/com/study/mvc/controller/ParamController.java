@@ -1,5 +1,6 @@
 package com.study.mvc.controller;
 
+import com.study.mvc.bean.User;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.CookieValue;
 import org.springframework.web.bind.annotation.RequestHeader;
@@ -40,6 +41,12 @@ public class ParamController {
         System.out.println("username:" + username + ",password=" + password + ",hobby:" + Arrays.toString(hobby));
         System.out.println("host:" + host);
         System.out.println("JSESSIONID:" + JSESSIONID);
+        return "success";
+    }
+
+    @RequestMapping("/testBean")
+    public String testBean(User user){
+        System.out.println(user);
         return "success";
     }
 }
