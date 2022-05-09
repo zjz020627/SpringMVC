@@ -47,3 +47,18 @@ public String testApplication(HttpSession session){
     application.setAttribute("testApplicationScope","hello,application");
     return "success";
 }
+
+
+视图控制器
+
+当控制器方法中，仅仅用来实现页面跳转，即只需要设置视图名称，可以将处理器方法使用view-controller标签进行表示
+
+path:路径
+view-name:要跳转的视图名称
+
+<mvc:view-controller path="/" view-name="index"></mvc:view-controller>
+
+注：
+一旦使用视图控制器后，一定要开启注解驱动，否则注解不生效
+<!--开启MVC的注解驱动-->
+<mvc:annotation-driven/>

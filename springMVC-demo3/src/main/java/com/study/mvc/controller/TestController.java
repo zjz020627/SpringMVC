@@ -16,10 +16,10 @@ import java.util.Map;
  */
 @Controller
 public class TestController {
-    @RequestMapping("/")
-    public String index(){
-        return "index";
-    }
+//    @RequestMapping("/")
+//    public String index(){
+//        return "index";
+//    }
 
     @RequestMapping("/testModelAndView")
     public ModelAndView testModelAndView(){
