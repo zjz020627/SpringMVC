@@ -1,0 +1,1 @@
+使用注解代替web.xml和springMVC.xml

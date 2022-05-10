@@ -36,4 +36,7 @@
 
     <!--开启MVC的注解驱动-->
     <mvc:annotation-driven/>
+
+    <!--配置文件上传解析器, 将上传的文件转换封装为MultipartFile-->
+    <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver"></bean>
 </beans>
